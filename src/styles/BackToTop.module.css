@@ -1,0 +1,21 @@
+.back2Top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.back2Top:hover {
+    transform: translateY(-5px);
+    background: var(--navbar-bg4);
+}

@@ -1,0 +1,79 @@
+.nav-bar {
+  background: linear-gradient(90deg, var(--navbar-bg1), var(--navbar-bg3));
+}
+
+.nav-item {
+  display: flex;
+  align-items: center
+}
+
+.nav-link {
+  color: #fff;
+  transition: .5s;
+}
+
+.nav-link:hover {
+  color: #fff;
+  letter-spacing: .1rem;
+  transition: .5s;
+  font-weight: bolder;
+}
+
+.navbar-show {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.color-change-5x {
+  -webkit-animation: color-change-5x 10s linear 2s infinite alternate both;
+  animation: color-change-5x 10s linear 2s infinite alternate both;
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #ff0616;
+  }
+
+  25% {
+    background: #b8006a;
+  }
+
+  50% {
+    background: #de2021;
+  }
+
+  75% {
+    background: #023766;
+  }
+
+  100% {
+    background: #060d17;
+  }
+}
+
+@keyframes color-change-5x {
+  0% {
+    background: #ff0616;
+  }
+
+  25% {
+    background: #b8006a;
+  }
+
+  50% {
+    background: #de2021;
+  }
+
+  75% {
+    background: #023766;
+  }
+
+  100% {
+    background: #060d17;
+  }
+}

@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --navbar-bg1: #fefae0;
+  --navbar-bg2: #020101;
+  --navbar-bg3: transparent;
+  --navbar-bg4: #ff101d;
+}
+
+.btn {
+  background: linear-gradient(to right, transparent, #090133);
 }

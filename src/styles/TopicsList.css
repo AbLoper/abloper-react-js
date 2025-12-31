@@ -1,0 +1,14 @@
+
+.list-group-item {
+  background-color: transparent !important;
+  color: #fff;
+  border: none;
+}
+
+.list-group-item:hover {
+  color: #090133;
+  font-weight: bold;
+  background-color: rgba(231, 229, 229, 0.4) !important;
+  border-radius: 0.5rem;
+  letter-spacing: .1rem;
+}
