@@ -15,23 +15,22 @@ export default function SubscribeForm() {
 
     const onSubmit = async (data) => {
         try {
-            // const response = await fetch("http://localhost:5000/api/subscribers", {
-            fetch("https://api.abloper.com/api/subscribers", {
+            const response = await fetch("https://api.abloper.com/api/subscribers", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
             });
 
-
             if (!response.ok) throw new Error();
 
             reset();
             setSuccess(true);
-        } catch {
+        } catch (error) {
             setSuccess(false);
             alert("حدث خطأ أثناء الإرسال ❌");
         }
     };
+
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="w-100">
