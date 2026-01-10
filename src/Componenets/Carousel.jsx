@@ -9,7 +9,7 @@ import {
 } from 'mdb-react-ui-kit'
 import TOPICS from '../data/topicsContent'
 import { useEffect } from 'react';
-import useViewport from './Effects/useViewPort';
+import useViewport from './Effects/useViewport';
 
 export default function Carousel() {
     const { isMobile } = useViewport();
