@@ -3,8 +3,12 @@ import Home from './Componenets/pages/Home';
 import Navbar from './Componenets/Navbar';
 import Profile from './Componenets/pages/Profile';
 import BackToTop from './Componenets/Effects/BackToTop';
-import Test from './Componenets/Test';
 import Footer from './Componenets/pages/Footer';
+import Carousel from './Componenets/Carousel';
+import SwiperSlides from './Componenets/SwiperSlides';
+import Test from './Componenets/Test';
+import Overlay from './Componenets/Effects/Overlay';
+import TopicContent from './Componenets/TopicContent';
 export default function App() {
 
   return (
@@ -12,9 +16,13 @@ export default function App() {
       <Navbar />
       <BackToTop />
       <Home />
+      <Carousel/>
+      {/* <SwiperSlides/> */}
       <Profile />
       <Footer/>
       {/* <Test/> */}
+      {/* <Overlay/> */}
+      {/* <TopicContent/> */}
     </>
   )
 }

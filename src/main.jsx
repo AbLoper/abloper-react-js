@@ -1,5 +1,6 @@
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import './App.css';
 import './index.css';
 import './mediaQuery.css'
@@ -12,7 +13,7 @@ import { IconContext } from "react-icons";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <IconContext.Provider value={{ size: "16px" }}> */}
-      <App />
+    <App />
     {/* </IconContext.Provider> */}
   </StrictMode>
 );

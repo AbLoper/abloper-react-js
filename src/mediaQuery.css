@@ -1,6 +1,11 @@
 /* Extra small devices (xs) (phones, less than 576px) */
 @media (max-width: 575px) {
+
   /* أي تخصيصات خاصة بالأجهزة الصغيرة هنا */
+  /* .carousel-control-prev,
+  .carousel-control-next {
+    display: none
+  } */
 }
 
 /* Small devices (sm) (portrait tablets and large phones, 576px to 767px) */
@@ -22,6 +27,11 @@
   .menus {
     background: linear-gradient(to right, #1b3b6f, transparent);
   }
+
+  /* .carousel-control-prev,
+  .carousel-control-next {
+    display: block
+  } */
 }
 
 /* Large devices (lg) (laptops/desktops, 992px to 1199px) */

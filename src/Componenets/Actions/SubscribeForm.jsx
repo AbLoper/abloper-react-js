@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { MDBBtn } from "mdb-react-ui-kit";
+import { MDBBtn, MDBContainer } from "mdb-react-ui-kit";
 import { useState } from "react";
 
 export default function SubscribeForm() {
@@ -21,7 +21,14 @@ export default function SubscribeForm() {
                 body: JSON.stringify(data),
             });
 
-            if (!response.ok) throw new Error();
+            //1
+            // if (!response.ok) throw new Error();
+
+            //2
+            const result = await response.json();
+            if (!response.ok) {
+                throw new Error(result.message || "خطأ غير معروف");
+            }
 
             reset();
             setSuccess(true);
@@ -35,7 +42,7 @@ export default function SubscribeForm() {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="w-100">
 
-            <div className="d-flex flex-column flex-lg-row gap-2 w-100">
+            <MDBContainer fluid className="d-flex flex-column flex-lg-row gap-2 w-100">
 
                 <input
                     type="email"
@@ -60,7 +67,7 @@ export default function SubscribeForm() {
                     {isSubmitting ? "Sending..." : "Keep Me Posted"}
                 </MDBBtn>
 
-            </div>
+            </MDBContainer>
 
             {/* رسالة الخطأ */}
             {errors.email && (

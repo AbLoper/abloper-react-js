@@ -1,0 +1,13 @@
+.footer-link {
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.footer-link svg {
+  flex-shrink: 0;
+}
