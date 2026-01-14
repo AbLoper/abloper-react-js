@@ -22,7 +22,7 @@ export default function Carousel() {
             showIndicators
             showControls={isMobile ? false : true}
             fade
-            style={{ background: '#000', padding: '.5rem' }}
+            style={{ background: '#000' }}
         >
             {TOPICS.map(topic => (
                 <MDBCarouselItem
@@ -33,28 +33,28 @@ export default function Carousel() {
                         backgroundImage: `url(${topic.backgroundImage})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
-                        height: '100vh',
-                        position: 'relative'
+                        height: '90vh',
+                        position: 'relative',
                     }}
                 >
                     <Overlay />
 
                     <MDBContainer
-                        className="h-100 text-light d-flex flex-column justify-content-between"
+                        className="h-100 text-light d-flex flex-column justify-content-evenly"
                         style={{ position: 'relative', zIndex: 2 }}
                     >
-                        <MDBRow className="pt-5 text-center">
-                            <MDBCol>
+                        <MDBRow>
+                            <MDBCol className=' d-flex flex-column gap-2 align-items-center'>
                                 <img
                                     src={topic.icon}
-                                    style={{ width: '8rem', marginBottom: '1rem' }}
+                                    style={{ width: '8rem' }}
                                     alt={topic.title}
                                 />
                                 <h2>{topic.title}</h2>
                             </MDBCol>
                         </MDBRow>
 
-                        <MDBRow className="pb-5">
+                        <MDBRow>
                             <MDBCol md="8">
                                 <h5>{topic.description}</h5>
 

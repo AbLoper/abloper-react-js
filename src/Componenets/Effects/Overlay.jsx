@@ -10,8 +10,8 @@ export default function Overlay() {
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: '95vw',
-                height: '95vh',
+                width: '95%',
+                height: '95%',
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
                 zIndex: 1,
             }}

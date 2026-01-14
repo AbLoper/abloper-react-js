@@ -7,7 +7,7 @@ const topicsList = [
     { title: 'User Experience & Interface Design', link: '' },
     { title: 'Front-End Web Development', link: '' },
     { title: 'Back-End Web Development', link: '' },
-    { title: 'Mobile Application Development', link: 'www.hotmail.com' },
+    { title: 'Mobile Application Development', link: '' },
     { title: 'MongoDB Database Management', link: '' },
     { title: 'Artificial Intelligent Integration', link: '' }
 ]

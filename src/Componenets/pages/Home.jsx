@@ -15,6 +15,7 @@ export default function Home() {
                 height: '150vh',
                 overflow: 'hidden'
             }}
+            className='d-flex flex-column justify-content-center align-items-center'
         >
             {/* خلفية متحركة */}
             <MDBCardImage
@@ -36,7 +37,7 @@ export default function Home() {
             {/* Logo */}
             <MDBRow
                 className='text-center gap-4'
-                style={{ marginTop: '8rem' }}>
+                style={{ marginTop: '4rem' }}>
                 <MDBCardImage
                     className={Styles['kenburns-bottom']}
                     src={Logo}

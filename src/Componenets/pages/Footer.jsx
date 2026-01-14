@@ -9,7 +9,7 @@ export default function Footer() {
 
             <MDBRow>
 
-                <MDBCol xs={12}>
+                <MDBCol xs={12} className="p-4"> 
                     <MarqueeComp />
                 </MDBCol>
 
@@ -50,7 +50,7 @@ export default function Footer() {
 
                         <li className="text-center">
                             <MDBContainer fluid>
-                                <span className="d-block d-lg-none">Subscribe to our newslietter for news, update<br />
+                                <span className="d-block d-lg-none">Subscribe to our newsletter for news, update<br />
                                     helpful and exclusive offers.
                                 </span>
                                 <span className="d-none d-lg-block text-lg-start">Subscribe to our newsletter for news, update

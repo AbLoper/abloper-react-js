@@ -18,7 +18,7 @@ const SOCIAL_LINKS = [
 ];
 
 export default function MarqueeComp() {
-    
+
     const isMobile = window.innerWidth < 768;
 
     return (
@@ -46,7 +46,8 @@ export default function MarqueeComp() {
                             className="footer-link d-flex align-items-center gap-2 text-light text-decoration-none"
                         >
                             <Icon size={isMobile ? "1.25em" : "1.5em"} />
-                            {!isMobile && <span>{name}</span>}
+                            {/* {!isMobile && <span>{name}</span>} */}
+                            <span>{name}</span>
                         </a>
                     </li>
                 ))}
