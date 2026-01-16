@@ -46,7 +46,7 @@ export default function Home() {
                 />
                 <span
                     style={{
-                        fontSize: 'clamp(12px,3vw,56px)',
+                        fontSize: 'clamp(10px,2.5vw,56px)',
                         fontFamily: '  "Orbitron", sans-serif',
                         fontOpticalSizing: 'auto',
                         fontWeight: '400',

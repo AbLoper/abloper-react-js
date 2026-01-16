@@ -18,12 +18,15 @@ export default function Carousel() {
     }, [isMobile])
 
     return (
-        <div style={{ backgroundColor: '#000', padding: '1rem' }}>
+        <div style={{ backgroundColor: '#000' }}>
             <MDBCarousel
                 showIndicators
                 showControls={isMobile ? false : true}
                 fade
-                style={{ height: '100vh' }}
+                // style={{ height: 'auto' }}
+                style={{
+                    height: '100vh'
+                }}
             >
                 {TOPICS.map(topic => (
                     <MDBCarouselItem
@@ -35,6 +38,7 @@ export default function Carousel() {
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             height: '100vh',
+                            // height: 'auto',
                             position: 'relative',
                         }}
                         className='d-flex justify-content-center align-items-center'
@@ -44,7 +48,7 @@ export default function Carousel() {
                         <MDBContainer style={{
                             position: 'relative',
                             zIndex: 2,
-                            height: '100%',
+                            height: 'auto',
                             paddingTop: '2rem'
                         }}>
 

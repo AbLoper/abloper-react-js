@@ -7,7 +7,6 @@ import {
 } from "mdb-react-ui-kit";
 import myFace from '../../assets/images/myface.png';
 import bgImage from '../../assets/backgrounds/profile.jpg';
-// import styles from '../../styles/Home.module.css'
 import '../../styles/Profile.css'
 
 export default function Profile() {
