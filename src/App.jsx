@@ -9,6 +9,7 @@ import SwiperSlides from './Componenets/SwiperSlides';
 import Test from './Componenets/Test';
 import Overlay from './Componenets/Effects/Overlay';
 import TopicContent from './Componenets/TopicContent';
+import { MDBContainer } from 'mdb-react-ui-kit';
 export default function App() {
 
   return (
@@ -16,7 +17,7 @@ export default function App() {
       <Navbar />
       <BackToTop />
       <Home />
-      <Carousel/>
+      <Carousel />
       {/* <SwiperSlides/> */}
       <Profile />
       <Footer/>

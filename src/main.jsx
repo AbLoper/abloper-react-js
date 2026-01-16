@@ -1,8 +1,7 @@
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import './App.css';
-import './index.css';
+import './main.css';
 import './mediaQuery.css'
 import App from './App.jsx';
 import { StrictMode } from 'react';

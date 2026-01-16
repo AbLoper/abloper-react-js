@@ -52,7 +52,7 @@ export default function Navbar() {
     return (
         <MDBNavbar
             expand='lg'
-            className={`px-4 py-2 shadow-sm m-3 rounded-1 fixed-top color-change-5x ${showNavbar ? 'navbar-show' : 'navbar-hide'}`}
+            className={`shadow-sm m-3 rounded-1 fixed-top color-change-5x ${showNavbar ? 'navbar-show' : 'navbar-hide'}`}
         >
             <MDBContainer fluid id="navbarContainer">
                 <MDBNavbarBrand href='#'>
@@ -68,8 +68,8 @@ export default function Navbar() {
                     <MDBIcon icon='bars' fas />
                 </MDBNavbarToggler>
 
-                <MDBCollapse navbar open={openBasic} style={{ fontSize: '14px' }} className="justify-content-end">
-                    <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 gap-1 text-light' >
+                <MDBCollapse navbar open={openBasic} className="justify-content-end">
+                    <MDBNavbarNav className='text-light d-flex justify-content-center align-items-start align-items-lg-center my-3 my-lg-0' >
 
                         <MDBNavbarItem>
                             <HiHome />
@@ -111,15 +111,16 @@ export default function Navbar() {
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>
-                            <MDBBtn className="d-flex align-items-center gap-1 border border-light rounded-5">
+                            <MDBBtn className="d-flex justify-content-center align-items-center gap-1 border border-light rounded-5">
                                 <IoMdShareAlt />
                                 Share
                             </MDBBtn>
                         </MDBNavbarItem>
 
-                        <MDBNavbarItem className="d-flex align-items-center m-2" style={{ cursor: 'pointer' }}>
+                        <MDBNavbarItem className="my-4 m-lg-4" style={{ cursor: 'pointer' }}>
                             <GrLanguage size="24px" />
                         </MDBNavbarItem>
+
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBContainer>

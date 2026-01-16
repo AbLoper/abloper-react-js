@@ -17,3 +17,7 @@ body {
 .btn {
   background: linear-gradient(to right, transparent, #090133);
 }
+
+  .homeTop {
+    margin-top: '18rem'
+  }

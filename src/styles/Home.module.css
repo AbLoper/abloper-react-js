@@ -4,6 +4,7 @@
   font-family: Big Shoulders Stencil, sans-serif;
   text-align: center;
   color: #fff;
+  
 }
 
 /* ------------------------------------------------------------------------------------------------------ */
@@ -70,7 +71,7 @@
     opacity: 1;
   }
 
-  60% {
+  50% {
     opacity: 0.8;
   }
 
@@ -85,7 +86,7 @@
     opacity: 1;
   }
 
-  60% {
+  50% {
     opacity: 0.8;
   }
 
@@ -209,3 +210,7 @@
     transform-origin: top;
   }
 }
+
+
+.marginTopHome{
+  margin-top:10rem}

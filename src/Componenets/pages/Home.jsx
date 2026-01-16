@@ -12,9 +12,9 @@ export default function Home() {
             style={{
                 position: 'relative',
                 width: '100%',
-                height: '150vh',
                 overflow: 'hidden'
             }}
+
             className='d-flex flex-column justify-content-center align-items-center'
         >
             {/* خلفية متحركة */}
@@ -36,25 +36,23 @@ export default function Home() {
 
             {/* Logo */}
             <MDBRow
-                className='text-center gap-4'
-                style={{ marginTop: '4rem' }}>
+                className='marginTopHome text-center gap-4'
+            >
                 <MDBCardImage
                     className={Styles['kenburns-bottom']}
                     src={Logo}
                     alt="Logo"
-                    style={{ width: '80vw' }}
+                    style={{ width: '75vw' }}
                 />
                 <span
                     style={{
-                        fontSize: 'clamp(14px,3vw,56px)',
+                        fontSize: 'clamp(12px,3vw,56px)',
                         fontFamily: '  "Orbitron", sans-serif',
                         fontOpticalSizing: 'auto',
                         fontWeight: '400',
                         fontStyle: 'normal',
-                        // marginBottom:'3rem'
                     }}
-                    className={`text-light ${Styles.trackingOutExpand} w-auto m-auto`}>
-                    {/* className={`text-light  w-auto m-auto ${styles.sloganText} bg-dark`}> */}
+                    className={`text-light ${Styles.trackingOutExpand} mb-lg-5`}>
                     When Cr
                     <span className='text-warning'>e</span>
                     <span className='text-success'>a</span>tiv
@@ -65,9 +63,9 @@ export default function Home() {
 
             {/* Text + Options */}
             <MDBRow
-                className="d-flex justify-content-center align-items-center w-100 p-3 mt-5">
+                className="d-flex justify-content-center align-items-center w-100">
                 <MDBCol xs={12} lg={6}
-                    className={`${Styles.typeEffect} mb-5`}>
+                    className={`${Styles.typeEffect}`}>
                     <TypeWriterEffect />
                 </MDBCol>
                 <MDBCol xs={12} lg={6}

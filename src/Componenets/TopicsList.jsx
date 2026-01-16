@@ -16,22 +16,25 @@ export default function TopicsList() {
     return (
 
         <MDBContainer>
+
             <MDBListGroup className='text-center'>
 
                 {
                     topicsList.map(topic => (
                         <MDBRipple key={topic}>
-                            <MDBListGroupItem tag="a" href={topic.link}>
+                            <MDBListGroupItem tag="a" href={topic.link} >
                                 {topic.title}
                             </MDBListGroupItem>
                         </MDBRipple>
                     ))}
 
-                <MDBBtn className='shareBtn d-flex justify-content-center gap-1 mt-5 border border-light rounded-5'>
+                <MDBBtn className='d-flex justify-content-center gap-1 m-5 border border-light rounded-5'>
                     <GiBugleCall />
                     Hire Me
                 </MDBBtn>
+
             </MDBListGroup>
+
         </MDBContainer>
     );
 }

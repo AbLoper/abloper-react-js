@@ -4,7 +4,6 @@
   animation: blink 1s infinite;
 }
 
-
 @keyframes blink {
   0% {
     opacity: 1;
@@ -18,8 +17,6 @@
     opacity: 1;
   }
 }
-
-
 
 .wave {
   display: inline-block;

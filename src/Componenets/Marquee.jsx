@@ -28,7 +28,7 @@ export default function MarqueeComp() {
             // gradient={!isMobile}
             className="footer-marquee"
         >
-            <ul className="footerSocialIconsList d-flex align-items-center gap-5 py-3 list-unstyled ms-5">
+            <ul className="d-flex align-items-center gap-5 py-3 list-unstyled ms-5">
 
                 {!isMobile && (
                     <li className="text-light opacity-75 text-nowrap">

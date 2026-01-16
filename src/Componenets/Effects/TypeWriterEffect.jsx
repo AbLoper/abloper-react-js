@@ -1,13 +1,13 @@
 import Typewriter from "typewriter-effect";
-import '../../index.css'
 import { MDBContainer } from "mdb-react-ui-kit";
 import '../../styles/TypeWriterEffect.css'
 
 export default function TypeWriterEffect() {
     return (
         <MDBContainer style={{
-            fontSize: '2.5rem',
-            minHeight: '150px',
+            fontSize: 'clamp(40px,3vw,64px)',
+            // minHeight: '100px',
+            padding:'5rem 0'
         }}>
             <Typewriter
                 onInit={(typewriter) => {
@@ -22,7 +22,7 @@ export default function TypeWriterEffect() {
                         // .deleteChars(7)
 
                         .typeString(
-                            "<span class='text'><strong style='color:#8ac926'>MERN</strong><strong style='color:#feff00'>-S</strong>tack Web Developer 💻</span>"
+                            "<span class='text'><strong style='color:#8ac926'>MERN</strong><strong style='color:#feff00'>-S</strong>tack W<strong style='color:#dc2f02'>e</strong>b Developer 💻</span>"
                         )
                         .pauseFor(1200)
                         .deleteAll()
